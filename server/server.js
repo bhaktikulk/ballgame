@@ -85,6 +85,11 @@ mongoose.connect("mongodb+srv://Bhakti12:12345678a@cluster.hozl3.mongodb.net/sco
   useUnifiedTopology: true,
 });
 
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
+
+
 const leaderboardSchema = new mongoose.Schema({
   username: String,
   score: Number,
